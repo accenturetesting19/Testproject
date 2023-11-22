@@ -13,7 +13,8 @@ pool:
 steps:
 - script: echo Hello, world one!
   displayName: 'Run a one-line script'
-
+- checkout: self 
+- checkout: demo 
 - task: GitHubComment@0
   inputs:
     gitHubConnection: 'github.com_accenturetesting19'
