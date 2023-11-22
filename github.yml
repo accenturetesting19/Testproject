@@ -8,7 +8,7 @@ resources:
     - repository : demo
       type  : github
       name  : accenturetesting19/demo      
-      ref   : 'refs/heads/master'
+#      ref   : 'refs/heads/master'
       endpoint: 'github.com_accenturetesting19'
 
 trigger:
