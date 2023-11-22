@@ -7,7 +7,7 @@ resources:
   repositories:
     - repository : demo
       type  : github
-#      name  : jkcodepoint/examples      
+      name  : accenturetesting19/demo      
       ref   : 'refs/heads/master'
       endpoint: 'github.com_accenturetesting19'
 
