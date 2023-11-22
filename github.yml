@@ -23,6 +23,13 @@ steps:
   displayName: 'Run a one-line script'
 - checkout: self 
 - checkout: demo 
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      git add.
+      git commit -m "Testing code"
+      git push -u origin master
 - task: GitHubComment@0
   inputs:
     gitHubConnection: 'github.com_accenturetesting19'
