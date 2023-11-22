@@ -9,7 +9,7 @@ resources:
       type  : github
 #      name  : jkcodepoint/examples      
       ref   : 'refs/heads/master'
-      endpoint: 'codepoint github'
+      endpoint: 'github.com_accenturetesting19'
 
 trigger:
 - main
