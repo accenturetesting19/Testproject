@@ -13,12 +13,11 @@ pool:
 steps:
 - script: echo Hello, world one!
   displayName: 'Run a one-line script'
+
 - task: GitHubComment@0
   inputs:
-    connection: 'github.com_accenturetesting19'
-    userRepository: 'accenturetesting19/Testproject'
-    defaultVersionType: 'latest'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    gitHubConnection: 'github.com_accenturetesting19'
+    repositoryName: '$(Build.Repository.Name)'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
