@@ -27,7 +27,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      git add.
+      git add .
       git commit -m "Testing code"
       git push -u origin master
 - task: GitHubComment@0
