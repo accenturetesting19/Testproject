@@ -23,6 +23,7 @@ steps:
   displayName: 'Run a one-line script'
 - checkout: self 
 - checkout: demo 
+
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
@@ -34,7 +35,9 @@ steps:
   inputs:
     gitHubConnection: 'github.com_accenturetesting19'
     repositoryName: '$(Build.Repository.Name)'
+    
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
+    echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
   displayName: 'Run a multi-line script'
